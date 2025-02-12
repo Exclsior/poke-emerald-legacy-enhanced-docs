@@ -34,7 +34,7 @@ jobs:
       - name: Copy generated site to docs folder
         run: |
           rm -rf docs/*
-          cp -r googolpress/site/* docs/
+          cp -r googolpress/site/ docs/
 
       - name: Commit and push changes
         run: |
