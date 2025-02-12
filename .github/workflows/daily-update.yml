@@ -29,7 +29,8 @@ jobs:
 
       - name: Run site generator
         run: |
-          python googolpress/make_site.py /d/1rBSuhFmiiehghr3AQ37JwBzbLCD21TXo_SWpUUXsz9k
+          cd googolpress
+          python make_site.py /d/1rBSuhFmiiehghr3AQ37JwBzbLCD21TXo_SWpUUXsz9k
 
       - name: Copy generated site to docs folder
         run: |
