@@ -26,6 +26,7 @@ jobs:
         run: |
           cd googolpress
           npm install
+          echo "$(pwd)/node_modules/.bin" >> $GITHUB_PATH
 
       - name: Run site generator
         run: |
