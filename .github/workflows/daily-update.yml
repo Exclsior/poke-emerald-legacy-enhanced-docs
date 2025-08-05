@@ -19,7 +19,7 @@ jobs:
       - name: Checkout googolpress repo
         uses: actions/checkout@v4
         with:
-          repository: MrYakobo/googolpress
+          repository: Exclsior/googolpress
           token: ${{ secrets.GITHUB_TOKEN }}
           path: googolpress
 
@@ -32,7 +32,7 @@ jobs:
       - name: Run site generator
         run: |
           cd googolpress
-          python make_site.py /d/1rBSuhFmiiehghr3AQ37JwBzbLCD21TXo_SWpUUXsz9k
+          python make_site.py /d/1H9DsezPqcXSM20aJsje4xNP4eQ6PxJ_412AUaprGnrw
 
       - name: Checkout docs repo
         uses: actions/checkout@v4
