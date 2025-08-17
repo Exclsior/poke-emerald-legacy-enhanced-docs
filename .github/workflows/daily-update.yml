@@ -6,6 +6,7 @@ on:
   workflow_dispatch: # Allows manual triggering
 
 jobs:
+if: false # Temporarily disabled
   update-site:
     runs-on: ubuntu-latest
     container:
@@ -32,7 +33,7 @@ jobs:
       - name: Run site generator
         run: |
           cd googolpress
-          python make_site.py "https://docs.google.com/document/d/1H9DsezPqcXSM20aJsje4xNP4eQ6PxJ_412AUaprGnrw/edit?usp=sharing"
+          python make_site.py /d/1H9DsezPqcXSM20aJsje4xNP4eQ6PxJ_412AUaprGnrw
 
       - name: Checkout docs repo
         uses: actions/checkout@v4
